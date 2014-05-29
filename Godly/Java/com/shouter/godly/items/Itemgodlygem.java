@@ -14,5 +14,4 @@ public class Itemgodlygem extends Item
 		setTextureName(reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setCreativeTab(CreativeTabs.tabMaterials);
 	}
-	
 }
