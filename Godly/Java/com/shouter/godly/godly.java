@@ -73,6 +73,7 @@ public class godly
 		godlyaxe = new Itemgodlyaxe(godlyMaterial);
 		registerhelper.registerItem(godlyaxe);
 		
+		//Test
 		
 		//Crafting
 		GameRegistry.addRecipe(new ItemStack(godlypickaxe), new Object[]
