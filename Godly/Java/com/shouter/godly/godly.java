@@ -11,10 +11,12 @@ import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
+import com.shouter.godly.blocks.Blockinfusioncauldron;
 import com.shouter.godly.blocks.Blockgodlyore;
 import com.shouter.godly.help.reference;
 import com.shouter.godly.help.registerhelper;
 import com.shouter.godly.items.Itemgodlygem;
+import com.shouter.godly.items.Iteminfusioncauldron;
 import com.shouter.godly.tools.Itemgodlyaxe;
 import com.shouter.godly.tools.Itemgodlypickaxe;
 import com.shouter.godly.tools.Itemgodlyspade;
@@ -30,6 +32,7 @@ public class godly
 	
 	//Items
 	public static Item godlygem;
+    public static Item infusioncauldronitem;
 	
 	//Tools
 	public static Item godlypickaxe;
@@ -47,10 +50,15 @@ public class godly
 		godlyore = new Blockgodlyore();
 		registerhelper.registerBlock(godlyore);
 		
+		infusioncauldron = new Blockinfusioncauldron();
+		registerhelper.registerBlock(infusioncauldron);
+		
 		//Items
 		godlygem = new Itemgodlygem();
 		registerhelper.registerItem(godlygem);
 		
+		infusioncauldronitem = new Iteminfusioncauldron();
+		registerhelper.registerItem(infusioncauldronitem);
 		
 		//Tools
 		godlypickaxe = new Itemgodlypickaxe(godlyMaterial);
