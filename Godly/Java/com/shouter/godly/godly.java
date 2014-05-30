@@ -32,8 +32,8 @@ public class godly
 	
 	//Items
 	public static Item godlygem;
-    public static Item infusioncauldronitem;
-	
+    	public static Item infusioncauldronitem;
+		
 	//Tools
 	public static Item godlypickaxe;
 	public static Item godlysword;
