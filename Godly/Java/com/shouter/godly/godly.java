@@ -53,7 +53,7 @@ public class godly
 		
 		infusioncauldron = new Blockinfusioncauldron();
 		registerhelper.registerBlock(infusioncauldron);
-		//lelfaggits
+		//lelfaggitss
 		//Items
 		godlygem = new Itemgodlygem();
 		registerhelper.registerItem(godlygem);
