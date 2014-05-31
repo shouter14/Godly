@@ -25,6 +25,7 @@ import com.shouter.godly.tools.Itemgodlysword;
 @Mod(modid = reference.MODID, version = reference.VERSION)
 public class godly 
 {
+	int RenderId;
 	
 	//Blocks
 	public static Block godlyore;
@@ -72,8 +73,6 @@ public class godly
 		
 		godlyaxe = new Itemgodlyaxe(godlyMaterial);
 		registerhelper.registerItem(godlyaxe);
-		
-		//Test
 		
 		//Crafting
 		GameRegistry.addRecipe(new ItemStack(godlypickaxe), new Object[]

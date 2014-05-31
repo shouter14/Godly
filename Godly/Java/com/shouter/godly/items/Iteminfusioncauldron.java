@@ -24,17 +24,17 @@ public class Iteminfusioncauldron extends Item
 		if(!world.isRemote)
 		{
 			if (side==3)
-				world.setBlock(x, y, z+1, godly.godlyore);
+				world.setBlock(x, y, z+1, godly.infusioncauldron);
 			if (side==4)
-				world.setBlock(x-1, y, z, godly.godlyore);
+				world.setBlock(x-1, y, z, godly.infusioncauldron);
 			if (side==5)
-				world.setBlock(x+1, y, z, godly.godlyore);
+				world.setBlock(x+1, y, z, godly.infusioncauldron);
 			if (side==2)
-				world.setBlock(x, y, z-1, godly.godlyore);
+				world.setBlock(x, y, z-1, godly.infusioncauldron);
 			if (side==1)
-				world.setBlock(x, y+1, z, godly.godlyore);
+				world.setBlock(x, y+1, z, godly.infusioncauldron);
 			if (side==0)
-				world.setBlock(x, y-1, z, godly.godlyore);
+				world.setBlock(x, y-1, z, godly.infusioncauldron);
 				
 				return true;
 			
@@ -45,7 +45,7 @@ public class Iteminfusioncauldron extends Item
 	public Iteminfusioncauldron()
 		{
 			super();
-			setUnlocalizedName("Iteminfusioncauldron");
+			setUnlocalizedName("infusioncauldronitem");
 			setTextureName(reference.MODID + ":" + getUnlocalizedName().substring(5));		
 			setCreativeTab(CreativeTabs.tabBrewing);
 	}
