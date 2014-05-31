@@ -26,7 +26,7 @@ import com.shouter.godly.tools.Itemgodlysword;
 public class godly 
 {
 	int RenderId;
-	//since when DID swag boii go ap tho huh?
+
 	//Blocks
 	public static Block godlyore;
 	public static Block infusioncauldron;
