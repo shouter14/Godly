@@ -46,7 +46,7 @@ public class godly
 	public static Item godlysword;
 	public static Item godlyspade;
 	public static Item godlyaxe;
-	
+	//Test
 	//Materials
 	static ToolMaterial godlyMaterial = EnumHelper.addToolMaterial("godlygem", 3, 2000, 14.0F, 6.0F, 30);
 	
