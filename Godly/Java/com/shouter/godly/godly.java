@@ -1,6 +1,9 @@
 package com.shouter.godly;
 
+import org.lwjgl.input.Keyboard;
+
 import net.minecraft.block.Block;
+import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
@@ -8,6 +11,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -17,6 +21,7 @@ import com.shouter.godly.help.reference;
 import com.shouter.godly.help.registerhelper;
 import com.shouter.godly.items.Itemgodlygem;
 import com.shouter.godly.items.Iteminfusioncauldron;
+import com.shouter.godly.items.Itemlevelbook;
 import com.shouter.godly.tools.Itemgodlyaxe;
 import com.shouter.godly.tools.Itemgodlypickaxe;
 import com.shouter.godly.tools.Itemgodlyspade;
@@ -33,7 +38,8 @@ public class godly
 	
 	//Items
 	public static Item godlygem;
-    	public static Item infusioncauldronitem;
+    public static Item infusioncauldronitem;
+    public static Item levelbook;
 		
 	//Tools
 	public static Item godlypickaxe;
@@ -60,6 +66,9 @@ public class godly
 		
 		infusioncauldronitem = new Iteminfusioncauldron();
 		registerhelper.registerItem(infusioncauldronitem);
+		
+		levelbook = new Itemlevelbook();
+		registerhelper.registerItem(levelbook);
 		
 		//Tools
 		godlypickaxe = new Itemgodlypickaxe(godlyMaterial);
@@ -107,5 +116,9 @@ public class godly
 			'G', godlygem, 'S', Items.stick
 		});
 	}
-
+	
+	public void Init(FMLInitializationEvent event)
+	{
+	
+	}
 }
