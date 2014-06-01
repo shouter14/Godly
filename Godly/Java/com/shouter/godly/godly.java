@@ -53,7 +53,7 @@ public class godly
 		
 		infusioncauldron = new Blockinfusioncauldron();
 		registerhelper.registerBlock(infusioncauldron);
-		
+
 		//Items
 		godlygem = new Itemgodlygem();
 		registerhelper.registerItem(godlygem);
